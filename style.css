@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+/* body {
+    background-color: black;
+} */
+
+* {
+    font-family: poppins, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: skyblue;
+}
+
+.profile-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 370px;
+    background-color: #fff;
+    width: 100%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 24px;
+    padding: 25px;
+    position: relative;
+}
+
+.profile-card::before {
+    content: " ";
+    position: absolute;
+    height: 150px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 24px 24px 0 0;
+    background-color: #0b4ef1;
+}
+
+.image {
+    position: relative;
+    margin-bottom: 10px;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: #4070f4;
+    padding: 3px;
+    /* border: 3px solid #4070f4; */
+}
+
+
+.image .profile-image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #fff;
+}
+
+.profile-card .text-date {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #333;
+}
+
+.text-date .name {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.text-date .job {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.profile-card .media-buttons {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.media-buttons .link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 18px;
+    background-color: #4070f4;
+    text-decoration: none;
+    margin: 0 8px;
+    height: 34px;
+    width: 34px;
+    border-radius: 50%;
+    ;
+}
+
+#facebook {
+    background-color: #4267b2;
+}
+
+#twitter {
+    background-color: #1da1f2;
+}
+
+#insta {
+    background-color: #e1306c;
+}
+
+#youtube {
+    background-color: #ff0000;
+}
+
+.profile-card .buttons {
+    margin-top: 25px;
+}
+
+.buttons .button {
+    padding: 8px 24px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 24px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: #4070f4;
+    cursor: pointer;
+    transition: all .3s ease;
+
+}
+
+.buttons .button:hover {
+    background-color: #0b4ef1;
+}
+
+.profile-card .analytics {
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.analytics .data {
+    display: flex;
+    align-items: center;
+    color: #333;
+    padding: 0 20px;
+    border-right: 2px solid #e7e7e7;
+}
+
+.data i {
+    font-size: 18px;
+    margin-right: 6px;
+}
+
+.data:last-child {
+    border-right: none;
+}
